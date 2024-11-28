@@ -1,13 +1,12 @@
 import React from "react";
 import { Snackbar } from "@mui/material";
-import MuiAlert from "@mui/material/Alert"; // To display the Snackbar as an alert
+import MuiAlert from "@mui/material/Alert";
 
-// Define the props for the Snackbar component
 const NotificationSnackbar = ({ open, message, severity, onClose }) => {
   return (
     <Snackbar
       open={open}
-      autoHideDuration={6000} // Duration of Snackbar visibility
+      autoHideDuration={6000}
       onClose={onClose}
     >
       <MuiAlert onClose={onClose} severity={severity} sx={{ width: "100%" }}>
